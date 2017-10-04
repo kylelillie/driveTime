@@ -27,7 +27,7 @@ for origin in from_list:
 			
 			print ("Computing ",start," to ",end)
 			
-			url = 'https://maps.googleapis.com/maps/api/distancematrix/json?units=metric&origins={0},AB&destinations={1},AB&key=AIzaSyDwrpWyEZpdw-l_WthiCOy43v9_oyzcz9c'.format(start,end)
+			url = 'https://maps.googleapis.com/maps/api/distancematrix/json?units=metric&origins={0},AB&destinations={1},AB&key=YourKey'.format(start,end)
 			response = (requests.get(url))
 			data = response.json()
 			
